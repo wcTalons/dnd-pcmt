@@ -1,0 +1,28 @@
+.img {
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.abjuration {
+	background-image: url('imgs/abjuration.png');
+}
+.conjuration {
+	background-image: url('imgs/conjuration.png');
+}
+.divination {
+	background-image: url('imgs/divination.png');
+}
+.enchantment {
+	background-image: url('imgs/enchantment.png');
+}
+.evocation {
+	background-image: url('imgs/evocation.png');
+}
+.illusion {
+	background-image: url('imgs/illusion.png');
+}
+.necromancy {
+	background-image: url('imgs/necromancy.png');
+}
+.transmutation {
+	background-image: url('imgs/transmutation.png');
+}

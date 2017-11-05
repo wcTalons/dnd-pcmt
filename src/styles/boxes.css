@@ -1,0 +1,209 @@
+/* margin std */
+.mar, .mar-top, .mar-btm-o, .mar-right-o, .mar-left-o {
+	margin-top: 5px;
+}
+
+.mar, .mar-right, .mar-top-o, .mar-btm-o, .mar-left-o {
+	margin-right: 5px;
+}
+
+.mar, .mar-bottom, .mar-top-o, .mar-right-o, .mar-left-o {
+	margin-bottom: 5px;
+}
+
+.mar, .mar-left, .mar-top-o, .mar-btm-o, .mar-right-o {
+	margin-left: 5px;
+}
+
+/* margin large */
+
+.mar-lg, .mar-lg-top, .mar-lg-btm-o, .mar-lg-right-o, .mar-lg-left-o {
+	margin-top: 10px;
+}
+
+.mar-lg, .mar-lg-right, .mar-lg-top-o, .mar-lg-btm-o, .mar-lg-left-o {
+	margin-right: 10px;
+}
+
+.mar-lg, .mar-lg-bottom, .mar-lg-top-o, .mar-lg-right-o, .mar-lg-left-o {
+	margin-bottom: 10px;
+}
+
+.mar-lg, .mar-lg-left, .mar-lg-top-o, .mar-lg-btm-o, .mar-lg-right-o {
+	margin-left: 10px;
+}
+
+/* margin giant */
+
+.mar-gi, .mar-gi-top, .mar-gi-btm-o, .mar-gi-right-o, .mar-gi-left-o {
+	margin-top: 20px;
+}
+
+.mar-gi, .mar-gi-right, .mar-gi-top-o, .mar-gi-btm-o, .mar-gi-left-o {
+	margin-right: 20px;
+}
+
+.mar-gi, .mar-gi-bottom, .mar-gi-top-o, .mar-gi-right-o, .mar-gi-left-o {
+	margin-bottom: 20px;
+}
+
+.mar-gi, .mar-gi-left, .mar-gi-top-o, .mar-gi-btm-o, .mar-gi-right-o {
+	margin-left: 20px;
+}
+
+/* margin titanic */
+
+.mar-tt, .mar-tt-top, .mar-tt-btm-o, .mar-tt-right-o, .mar-tt-left-o {
+	margin-top: 40px;
+}
+
+.mar-tt, .mar-tt-right, .mar-tt-top-o, .mar-tt-btm-o, .mar-tt-left-o {
+	margin-right: 40px;
+}
+
+.mar-tt, .mar-tt-bottom, .mar-tt-top-o, .mar-tt-right-o, .mar-tt-left-o {
+	margin-bottom: 40px;
+}
+
+.mar-tt, .mar-tt-left, .mar-tt-top-o, .mar-tt-btm-o, .mar-tt-right-o {
+	margin-left: 40px;
+}
+
+/* padding std */
+.pad, .pad-top, .pad-btm-o, .pad-right-o, .pad-left-o {
+	padding-top: 5px;
+}
+
+.pad, .pad-right, .pad-top-o, .pad-btm-o, .pad-left-o {
+	padding-right: 5px;
+}
+
+.pad, .pad-bottom, .pad-top-o, .pad-right-o, .pad-left-o {
+	padding-bottom: 5px;
+}
+
+.pad, .pad-left, .pad-top-o, .pad-btm-o, .pad-right-o {
+	padding-left: 5px;
+}
+
+/* padding large */
+
+.pad-lg, .pad-lg-top, .pad-lg-btm-o, .pad-lg-right-o, .pad-lg-left-o {
+	padding-top: 10px;
+}
+
+.pad-lg, .pad-lg-right, .pad-lg-top-o, .pad-lg-btm-o, .pad-lg-left-o {
+	padding-right: 10px;
+}
+
+.pad-lg, .pad-lg-bottom, .pad-lg-top-o, .pad-lg-right-o, .pad-lg-left-o {
+	padding-bottom: 10px;
+}
+
+.pad-lg, .pad-lg-left, .pad-lg-top-o, .pad-lg-btm-o, .pad-lg-right-o {
+	padding-left: 10px;
+}
+
+/* padding giant */
+
+.pad-gi, .pad-gi-top, .pad-gi-btm-o, .pad-gi-right-o, .pad-gi-left-o {
+	padding-top: 20px;
+}
+
+.pad-gi, .pad-gi-right, .pad-gi-top-o, .pad-gi-btm-o, .pad-gi-left-o {
+	padding-right: 20px;
+}
+
+.pad-gi, .pad-gi-bottom, .pad-gi-top-o, .pad-gi-right-o, .pad-gi-left-o {
+	padding-bottom: 20px;
+}
+
+.pad-gi, .pad-gi-left, .pad-gi-top-o, .pad-gi-btm-o, .pad-gi-right-o {
+	padding-left: 20px;
+}
+
+/* padding titanic */
+
+.pad-tt, .pad-tt-top, .pad-tt-btm-o, .pad-tt-right-o, .pad-tt-left-o {
+	padding-top: 40px;
+}
+
+.pad-tt, .pad-tt-right, .pad-tt-top-o, .pad-tt-btm-o, .pad-tt-left-o {
+	padding-right: 40px;
+}
+
+.pad-tt, .pad-tt-bottom, .pad-tt-top-o, .pad-tt-right-o, .pad-tt-left-o {
+	padding-bottom: 40px;
+}
+
+.pad-tt, .pad-tt-left, .pad-tt-top-o, .pad-tt-btm-o, .pad-tt-right-o {
+	padding-left: 40px;
+}
+
+/* border */
+.bdr::before, .bdr-top::before, .bdr-btm::before, .bdr-right::before, .bdr-left::before, .bdr-top-o::before, .bdr-right-o::before, .bdr-btm-o::before, .bdr-left-o::before, .bdr-top-btm::before, .bdr-right-left::before, .is-square::before, .is-circle::before {
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: inherit;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
+.bdr::before, .bdr-top-o::before, .bdr-btm-o::before, .bdr-right-left::before {
+    width: calc(100% - 2px);
+}
+
+.bdr-right::before, .bdr-left::before, .bdr-right-o::before, .bdr-left-o::before {
+    width: calc(100% - 1px);
+}
+
+.bdr-top-btm::before, .bdr-top::before, .bdr-btm::before {
+    width: 100%;
+}
+
+.bdr::before, .bdr-top-btm::before, .bdr-right-o::before, .bdr-left-o::before {
+    height: calc(100% - 2px);
+}
+
+.bdr-top::before, .bdr-btm::before, .bdr-top-o::before, .bdr-btm-o::before {
+    height: calc(100% - 1px);
+}
+
+.bdr-right-left::before, .bdr-right::before, .bdr-left::before {
+    height: 100%;
+}
+
+.bdr-right::before, .bdr-btm::before, .bdr-left::before, .bdr-top-o::before, .bdr-right-left::before {
+    border-top: none;
+}
+
+.bdr-top::before, .bdr-btm::before, .bdr-left::before, .bdr-right-o::before, .bdr-top-btm::before {
+    border-right: none;
+}
+
+.bdr-top::before, .bdr-right::before, .bdr-left::before, .bdr-btm-o::before, .bdr-right-left::before {
+    border-bottom: none;
+}
+
+.bdr-top::before, .bdr-right::before, .bdr-btm::before, .bdr-left-o::before, .bdr-top-btm::before {
+    border-left: none;
+}
+
+/* Shadows */
+.shadow-outline {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.shadow-inset {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-btm {
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "author": "Chris Aube",
+  "name": "DnD Manager",
+  "description": "A Character Management Tool",
+  "version": "1.0",
+  "app": {
+    "background": {
+      "scripts": [
+        "chrome-background.js"
+      ]
+    }
+  },
+  "permissions": [
+    {"fileSystem":["write","directory","retainEntries"]},
+    "storage",
+    "unlimitedStorage",
+    "system.storage",
+    "system.cpu",
+    "system.memory"
+  ],
+  "offline_enabled": true
+}

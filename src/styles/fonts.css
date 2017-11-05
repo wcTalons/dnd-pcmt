@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Kalam/Kalam-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kalam-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Kalam/Kalam-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kalam-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Kalam/Kalam-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Open-Sans/Open-Sans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Open-Sans/Open-Sans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Open-Sans/Open-Sans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Overlock';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Overlock/Overlock-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Overlock Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Overlock/Overlock-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Overlock Italic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Overlock/Overlock-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Simonetta';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Simonetta/Simonetta-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Simonetta Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Simonetta/Simonetta-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Simonetta Italic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Simonetta/Simonetta-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('Material-Icons-Regular'),
+    url('fonts/Material-Icons/Material-Icons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.4rem;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

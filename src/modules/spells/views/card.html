@@ -1,0 +1,35 @@
+<div ng-controller="ctrlSpellList as spellList">
+	<div ng-repeat="spell in spellList.spells" class="card pad-gi mar-tt bdr {{spell.school.color}}">
+		<div class="card-inner pad-gi bdr grey s-0 shadow-inset">
+			<div class="basic">
+				<div class="img bdr {{spell.school.img}}"></div>
+				<h3 class="heading fs-xs school">{{spell.school.label}}</h3>
+    			<h1 class="heading">
+    				<div class="name">{{spell.name}}</div>
+    				<div class="level ff-bold fs-sm">{{spell.level.label}}</div>
+    			</h1>
+			</div>
+			<div class="time">
+				<div class="casting">Casting Time: {{spell.time.casting.label}}</div>
+				<div class="duration">Duration: {{spell.time.duration.label}}</div>
+			</div>
+			<div class="attack">
+				<div class="type">Attack/Save: {{spell.attack.ability.label + " " + spell.attack.action.label}}</div>
+				<div class="range">Range: {{spell.attack.range.label}}</div>
+				<div class="target">Target: {{spell.attack.target.label}}</div>
+			</div>
+			<div class="hit">
+				<div class="damage">
+					<span>Damage:</span>
+					<span class="dice">{{spell.hit.count + spell.hit.dice.label}}</span>
+					<span class="type" ng-repeat="type in spell.damageTypes">{{type.label}}</span>
+				</div>
+			</div>
+			<div class="details">
+				<h6 class="heading">Details</h6>
+				<div class="description">{{spell.description}}</div>
+				<div class="higher-levels">{{spell.atHigherLevels}}</div>
+			</div>
+		</div>
+	</div>
+</div>
