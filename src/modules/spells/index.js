@@ -20,14 +20,15 @@ define([
 	'modules/spells/controllers/list'
 ], function (loaderUtls) {
 	var args = arguments;
-	var module = angular.module('dnd-spells', []);
+	var module = angular.module('pcmt-spells-mod', ['pcmt-ui-mod']);
 
-	module.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', function ($stateProvider, $locationProvider, $urlRouterProvider) {
-		$stateProvider
-        	.state('cards', {
-            	url: '/cards',
-            	templateUrl: 'spells/views/card.html'
-        	});
+	module.config(['$pcmtNavProvider', function ($pcmtNavProvider) {
+		$pcmtNavProvider.register({
+			icon: 'gesture',
+			state: 'spellList',
+			url: '/spellList',
+			templateUrl: 'spells/views/card.html'
+		});
 	}]);
 
 	loaderUtls.loadModule(module, args);

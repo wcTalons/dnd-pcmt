@@ -2,21 +2,19 @@ define([], function () {
     
     return {
         type: 'directive',
-        name: 'dndNav',
+        name: 'pcmtNav',
         value: [function () {
             return {
                 restrict: 'A',
-                templateUrl: 'navigation/views/nav.html',
+                templateUrl: 'ui/views/nav.html',
                 scope: {},
                 controllerAs: 'nav',
                 bindToController: true,
                 link: function (scope, elem, attrs) {},
-                controller: ['$nav', '$element', function ($nav, $element) {
+                controller: ['$pcmtNav', function ($pcmtNav) {
                 	var self = this;
 
-                	self.close = function () {
-                		chrome.app.window.current().close();
-                	};
+                    self.links = $pcmtNav.links;
                 }]
             };
         }]

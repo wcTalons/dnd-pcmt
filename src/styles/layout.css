@@ -1,0 +1,29 @@
+.std-layout, .nav-hoz, .align-hoz {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.aside.left {
+	order: 1;
+}
+
+.aside.right {
+	order: 3;
+}
+
+.main {
+	flex: 3 0px;
+	order: 2;
+}
+
+.nav-hoz, .align-hoz {
+	align-items: center;
+}
+
+.nav-hoz {
+	justify-content: space-between;
+}
+
+.align-hoz {
+	justify-content: flex-start;
+}

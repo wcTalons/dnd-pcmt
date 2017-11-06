@@ -7,7 +7,10 @@
         <script type="text/javascript" data-main="app.min.js" src="require.min.js"></script>
     </head>
     <body class="fs ff clr-dark">
-        <div dnd-nav></div>
-        <ui-view id="content-wrapper"></ui-view>
+        <div id="toolbar" pcmt-toolbar></div>
+        <div id="app" class="std-layout">
+            <aside class="aside left" pcmt-nav></aside>
+            <main ui-view id="app-content" class="main"></main>
+        </div>
     </body>
 </html>

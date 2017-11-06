@@ -36,6 +36,7 @@ paths.files = {
 		paths.styles + 'fonts.css',
 		paths.styles + 'dom.css',
 		paths.styles + 'boxes.css',
+		paths.styles + 'layout.css',
 		paths.styles + 'text.css',
 		paths.styles + 'colours.css',
 		paths.styles + 'imgs.css',
@@ -99,7 +100,7 @@ gulp.task('bundleCss', function () {
 gulp.task('makeHtml', function () {
 	return gulp.src(paths.files.html)
 		.pipe(plumber({ error: logError }))
-		.pipe(templateCache(paths.files.build.html, { module: 'dnd-manager' }))
+		.pipe(templateCache(paths.files.build.html, { module: 'pcmt-app' }))
 		.pipe(gulp.dest(paths.base));
 });
 

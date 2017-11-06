@@ -1,6 +1,6 @@
 define([
+	'modules/ui/index',
 	'modules/character/index',
-	'modules/navigation/index',
 	'modules/spells/index'
 ], function () {
 	var modules = arguments;

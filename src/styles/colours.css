@@ -889,6 +889,10 @@
     background-color: #ff8a65;
 }
 
+.is-selected {
+    color: #ff8a65;
+}
+
 .deep-orange.s-400 {
     background-color: #ff7043;
 }
