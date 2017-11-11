@@ -27,3 +27,93 @@
 .align-hoz {
 	justify-content: flex-start;
 }
+
+.transitions-quick, .transitions-quick::before, .transitions-quick::after {
+    will-change: background-color, border-color, opacity, transform, color, width, top, right, left;
+    transition:
+        background-color 90ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        border-color 90ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        opacity 90ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        transform 90ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        color 90ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        width 90ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        top 90ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        right 90ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        left 90ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        stroke-dashoffset 90ms 0ms cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.transitions-smooth, .transitions-smooth::before, .transitions-smooth:after {
+    will-change: background-color, border-color, opacity, transform, color, width, top, right, left;
+    transition:
+        background-color 120ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        border-color 120ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        opacity 120ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        transform 120ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        color 120ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        width 120ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        top 120ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        right 120ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        left 120ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        stroke-dashoffset 120ms 0ms cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.transitions-smoother, .transitions-smoother::before, .transitions-smoother::after {
+    will-change: background-color, border-color, opacity, transform, color, width, top, right, left;
+    transition:
+        background-color 150ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        border-color 150ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        opacity 150ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        transform 150ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        color 150ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        width 150ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        top 150ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        right 150ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        left 150ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        stroke-dashoffset 150ms 0ms cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.transitions-smoothest, .transitions-smoothest::before, .transitions-smoothest::after {
+    will-change: background-color, border-color, opacity, transform, color, width, top, right, left;
+    transition:
+        background-color 180ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        border-color 180ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        opacity 180ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        transform 180ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        color 180ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        width 180ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        top 180ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        right 180ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        left 180ms 0ms cubic-bezier(0.4, 0, 0.6, 1),
+        stroke-dashoffset 180ms 0ms cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.transitions-ultra-smooth, .transitions-ultra-smooth::before, .transitions-ultra-smooth::after {
+    will-change: background-color, border-color, opacity, transform, color, width, top, right, left;
+    transition:
+        background-color 225ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        border-color 225ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        opacity 225ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        transform 225ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        color 225ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        width 225ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        top 225ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        right 225ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        left 225ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        stroke-dashoffset 225ms 0ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.transitions-ultra-smoother, .transitions-ultra-smoother::before,  .transitions-ultra-smoother::after {
+    will-change: background-color, border-color, opacity, transform, color, width, top, right, left;
+    transition:
+        background-color 300ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        border-color 300ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        opacity 300ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        transform 300ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        color 300ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        width 300ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        top 300ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        right 300ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        left 300ms 0ms cubic-bezier(0, 0, 0.2, 1),
+        stroke-dashoffset 300ms 0ms cubic-bezier(0, 0, 0.2, 1);
+}

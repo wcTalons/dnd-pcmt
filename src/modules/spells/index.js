@@ -27,7 +27,8 @@ define([
 			icon: 'gesture',
 			state: 'spellList',
 			url: '/spellList',
-			templateUrl: 'spells/views/card.html'
+			templateUrl: 'spells/views/card.html',
+			label: 'Spell List'
 		});
 	}]);
 

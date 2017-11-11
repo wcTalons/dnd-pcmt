@@ -10,16 +10,24 @@ define([], function () {
                 scope: {},
                 controllerAs: 'nav',
                 bindToController: true,
+                replace: true,
                 link: function (scope, elem, attrs) {},
-                controller: [function () {
+                controller: ['$pcmtUiAppDrawer', function ($pcmtUiAppDrawer) {
                 	var self = this;
 
                     self.actions = {
                         close: {
                             icon: 'close',
-                            stateHover: 'red s-400 accent clr-light',
+                            stateHover: 'red s-400 accent',
                             fn: function () {
                                 chrome.app.window.current().close();
+                            }
+                        },
+                        menu: {
+                            icon: 'menu',
+                            stateHover: 'light-blue s-200 accent',
+                            fn: function () {
+                                $pcmtUiAppDrawer.toggle();
                             }
                         }
                     };

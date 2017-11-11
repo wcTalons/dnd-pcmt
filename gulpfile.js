@@ -21,7 +21,7 @@ paths.imgs = paths.base + 'imgs/';
 paths.require = paths.base + 'libs/';
 paths.modules = paths.base + 'modules/';
 paths.styles = paths.base + 'styles/';
-paths.utils = paths.base + 'utils/'
+paths.utils = paths.base + 'utls/'
 paths.chrome = {
 	manifest: paths.base + 'manifest.json',
 	background: paths.base + 'chrome-background.js'
@@ -63,6 +63,7 @@ paths.require = {
 		paths: {
 			appTemplates: paths.files.build.html.replace('.js', ''),
 			loaderUtls: 'utls/loader',
+			helperUtls: 'utls/helper',
 			moduleLocators: 'modules/index'
 		},
 		shim: {

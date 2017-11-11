@@ -10,7 +10,8 @@ define([
 			icon: 'accessibility',
 			state: 'stats',
 			url: '/stats',
-			templateUrl: 'character/views/stats.html'
+			templateUrl: 'character/views/stats.html',
+			label: 'Character Stats'
 		});
 		$urlRouterProvider.otherwise('/stats');
 	}]);
