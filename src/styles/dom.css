@@ -3,7 +3,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, main, aside, header, footer, button, in
 	box-sizing: border-box;
 }
 
-div, h1, h2, h3, h4, h5, h6, main, aside, header, footer, button, input, p, a, li {
+main, aside, header, footer {
 	overflow: auto;
 }
 

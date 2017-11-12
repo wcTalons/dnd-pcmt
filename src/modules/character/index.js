@@ -1,5 +1,11 @@
 define([
 	'loaderUtls',
+	'modules/character/constants/skills',
+	'modules/character/constants/weapons',
+	'modules/character/factories/character',
+	'modules/character/factories/wizard',
+	'modules/character/services/character',
+	'modules/character/services/pc-classes',
 	'modules/character/controllers/stats'
 ], function (loaderUtls) {
 	var args = arguments;
@@ -11,6 +17,8 @@ define([
 			state: 'stats',
 			url: '/stats',
 			templateUrl: 'character/views/stats.html',
+			controller: 'ctrlCharacterStats',
+			controllerAs: 'stats',
 			label: 'Character Stats'
 		});
 		$urlRouterProvider.otherwise('/stats');

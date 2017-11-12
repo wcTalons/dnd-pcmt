@@ -1,1 +1,73 @@
-<div class="std-layout">stats</div>
+<div class="std-layout">
+
+	<div id="ability-block" class="nav-hoz size100 pad">
+		<div class="align-hoz size100">
+
+			<div ng-repeat="ability in stats.abilities track by $index" class="ability pad mar bdr bdr-curved-l txt-center wrap">
+				<div class="label fs-xs">{{stats.character.abilities[ability.abbr].label}}</div>
+
+				<div class="mod mar push-center fs-xl">
+					<div class="bdr bdr-curved yellow s-100 pad-lg-right pad-lg-left">{{stats.character.abilities[ability.abbr].mod}}</div>
+				</div>
+
+				<div class="value fs-xs">{{stats.character.abilities[ability.abbr].value}}</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="combat-stats" class="nav-hoz size100 pad">
+		<div class="align-hoz size100">
+
+			<div class="ability pad mar bdr bdr-curved-l txt-center wrap">
+				<div class="label fs-xs">Proficiency</div>
+
+				<div class="mod mar push-center fs-xl">
+					<div class="pad-lg-right pad-lg-left">{{stats.character.proficiency}}</div>
+				</div>
+			</div>
+
+			<div class="ability pad mar bdr bdr-curved-l txt-center wrap">
+				<div class="label fs-xs">Armor Class</div>
+
+				<div class="mod mar push-center fs-xl">
+					<div class="pad-lg-right pad-lg-left">{{stats.character.ac}}</div>
+				</div>
+			</div>
+
+			<div class="ability pad mar bdr bdr-curved-l txt-center wrap">
+				<div class="label fs-xs">Max Hit Points</div>
+
+				<div class="mod mar push-center fs-xl">
+					<div class="pad-lg-right pad-lg-left">{{stats.character.hp.max}}</div>
+				</div>
+			</div>
+
+			<div class="ability pad mar bdr bdr-curved-l txt-center wrap">
+				<div class="label fs-xs">Hit Points</div>
+
+				<div class="mod mar push-center fs-xl">
+					<div class="pad-lg-right pad-lg-left">{{stats.character.hp.current}}</div>
+				</div>
+			</div>
+
+			<div class="ability pad mar bdr bdr-curved-l txt-center wrap">
+				<div class="label fs-xs">Temp Hit Points</div>
+
+				<div class="mod mar push-center fs-xl">
+					<div class="pad-lg-right pad-lg-left">{{stats.character.hp.temp}}</div>
+				</div>
+			</div>
+
+			<div class="ability pad mar bdr bdr-curved-l txt-center wrap">
+				<div class="label fs-xs">Speed</div>
+
+				<div class="mod mar push-center fs-xl">
+					<div class="pad-lg-right pad-lg-left">{{stats.character.speed}}</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>

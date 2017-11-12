@@ -28,6 +28,15 @@
 	justify-content: flex-start;
 }
 
+.grow1 {
+    flex-grow: 1;
+}
+
+.push-center {
+    display: flex;
+    justify-content: center;
+}
+
 .transitions-quick, .transitions-quick::before, .transitions-quick::after {
     will-change: background-color, border-color, opacity, transform, color, width, top, right, left;
     transition:

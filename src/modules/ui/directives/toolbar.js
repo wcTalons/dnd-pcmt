@@ -16,13 +16,6 @@ define([], function () {
                 	var self = this;
 
                     self.actions = {
-                        close: {
-                            icon: 'close',
-                            stateHover: 'red s-400 accent',
-                            fn: function () {
-                                chrome.app.window.current().close();
-                            }
-                        },
                         menu: {
                             icon: 'menu',
                             stateHover: 'light-blue s-200 accent',
@@ -31,6 +24,16 @@ define([], function () {
                             }
                         }
                     };
+
+                    if (chrome.app.window) {
+                        self.actions.close = {
+                            icon: 'close',
+                            stateHover: 'red s-400 accent',
+                            fn: function () {
+                                chrome.app.window.current().close();
+                            }
+                        }
+                    }
                 }]
             };
         }]

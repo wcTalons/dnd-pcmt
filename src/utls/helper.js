@@ -12,14 +12,25 @@ define([], function () {
         return new F();
     };
 
-    function jsonPointer(item, pointer) {
-        var resVal;
+    function jsonPointer(item, props) {
+        var resVal,
+            self = this,
+            propList = props.slice(),
+            prop = propList.splice(0, 1)[0];
 
-        try {
-            resVal = eval(pointer);
-        } finally {
-            return resVal;
+        if (item !== undefined) {
+
+            if (!propList.length) {
+                resVal = item[prop];
+            } else {
+
+                if (resVal.hasOwnProperty(prop)) {
+                    jsonPointer(item[prop], propList);
+                }
+            }
         }
+
+        return resVal;
     }
 
     //-- a list is an array of objects
@@ -35,13 +46,12 @@ define([], function () {
     List.prototype._getVal = jsonPointer;
 
     //-- find the index by json pointer
-    List.prototype.indexBy = function indexBy(prop, val) {
-        var index = -1,
-            pointer = 'item.' + prop;
-
+    List.prototype.indexBy = function indexBy(pointer, val) {
+        var index = -1;
+        
         for (var i = 0, ii = this.length; i < ii; i++) {
 
-            if (this._getVal(this[i], pointer) === val) {
+            if (this._getVal(this[i], pointer.split('.')) === val) {
                 index = i;
                 break;
             }

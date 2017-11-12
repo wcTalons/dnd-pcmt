@@ -93,3 +93,15 @@ h2.heading {
 .fs-xs {
 	font-size: 1.4rem;
 }
+
+.txt-center {
+	text-align: center;
+}
+
+.wrap {
+    word-break: break-word;
+    hyphens: auto;
+    overflow: initial;
+    text-overflow: initial;
+    white-space: normal;
+}
